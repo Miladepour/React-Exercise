@@ -4,11 +4,16 @@ import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
 import React from "react";
 
+function logWhenClicked (){
+  console.log("Clicked on the image");
+  }
+
+
 function App() {
    let abilities = ["Anticipation", "Adaptability", "Run-Away"];
   return (
     <div>
-    <Logo name="CYF" />
+    <Logo appName="CYF" onClickHandler={logWhenClicked}  />
     <BestPokemon props = {abilities} />
     <CaughtPokemon />
     </div>

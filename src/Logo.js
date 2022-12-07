@@ -1,14 +1,10 @@
-function logWhenClicked (){
-console.log("Clicked on the image");
-}
 
-const Logo = (props) => {
+const Logo = ({ appName, onClickHandler }) => {
     //let appName = "CYF";
-    console.log(props);
     return (
     <header>
-    <h1>Welcome to the {props.appName}'s Pokedex</h1>
-    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png" alt="Pekenon" onClick={logWhenClicked}></img>
+    <h1>Welcome to the {appName}'s Pokedex</h1>
+    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png" alt="Pekenon" onClick={onClickHandler} ></img>
     </header>
     );
   };
