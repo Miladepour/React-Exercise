@@ -2,7 +2,8 @@ import "./App.css";
 import Logo from "./Logo";
 import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
-import React from "react";
+import React, { useState }  from "react";
+
 
 function logWhenClicked (){
   console.log("Clicked on the image");
