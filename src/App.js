@@ -5,6 +5,7 @@ import CaughtPokemon from "./CaughtPokemon";
 import React, { useState }  from "react";
 // import PokemonMoves from "./PokemonMoves";
 import PokemonMovesSelector from "./PokemonMovesSelector";
+import PokemonCity from "./PokemonCity";
 
 
 function logWhenClicked (){
@@ -20,6 +21,7 @@ function App() {
     <BestPokemon props = {abilities} />
     <CaughtPokemon />
     <PokemonMovesSelector />
+    <PokemonCity />
     </div>
   );
 }
